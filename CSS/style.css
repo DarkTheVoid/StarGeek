@@ -7,18 +7,14 @@
 :root {
     --preto: black;
     --branco: white;
-    --pre-opac: rgba(0, 0, 0, 0.44);
+    --pre-opac: rgba(0, 0, 0, 0.642);
 }
 
 body {
-    background-image: url(../img/Union.png);
-    background: linear-gradient(180deg, rgba(116, 82, 255, 0.2) 0%,
-            rgba(141, 100, 253, 0.16429) 55.94%,
-            rgba(252, 184, 245, 0) 100%), #C9D8EA;
-}
-
-body>img {
-    width: 200px;
+    background:linear-gradient(180deg, rgba(116, 82, 255, 0.2) 0%,
+            rgba(85, 37, 217, 0.552) 55.94%,
+            rgba(31, 4, 77, 0.852) 100%), #C9D8EA;
+            
 }
 
 .banner {
@@ -30,7 +26,7 @@ body>img {
 }
 
 .banner>img {
-    width: 220px;
+    width: 200px;
 }
 
 .menu {
@@ -40,7 +36,9 @@ body>img {
 
 .menu>li {
     padding: 10px;
+    list-style-type: none;
 }
+
 
 .botao-azul {
     box-sizing: border-box;
@@ -60,7 +58,10 @@ body>img {
 /*fazendo o corpo*/
 
 .primeira-tela {
-    background-color: var(--pre-opac);
+    background: url(../img/Union.png) , var(--pre-opac);
+    background-repeat: no-repeat;
+    background-size: 600px;
+    background-position: 1100px 200px;
     width: auto;
     height: 500px;
     margin: 20px;    display: flex;
@@ -83,4 +84,107 @@ body>img {
     justify-content: center;
     align-items: center;
     flex-direction: column;
+}
+
+.seg-text {
+    color: var(--branco);
+    text-align: center;
+    width: 50%;
+    
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+
+/*estilizando login*/
+
+.tela-login{
+    background-color: var(--pre-opac);
+    margin: 25px;
+    display: flex;
+
+    height: 700px;
+}
+
+.area-esquerda{
+    background-color: var(--preto);
+    width: 50%;
+    align-items: center;
+    padding: 80px;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    
+    
+}
+
+.area-esquerda>img{
+    width: 400px;
+    display: flex;
+    flex-direction: column;
+    justify-items: center;
+    align-items: center;
+}
+
+.area-esquerda>h1{
+    color: var(--branco);
+    display: flex;
+    flex-direction: column;
+    
+}
+
+.area-direita{
+    width: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+
+.inputs{
+    list-style-type: none;
+}
+
+.escrita{
+    padding-right: 300px ;
+    padding-top: 10px;
+    padding-left: 2px;
+    padding-bottom: 2px;
+    margin-top: 2px;
+    margin-bottom: 30px;
+}
+
+input{
+    border: 3px solid  navy;
+    border-radius: 7px;
+    
+}
+
+/*tela de cadastro*/
+
+.cadastro-tela{
+    background: url(../img/Union.png) , var(--pre-opac);
+    background-repeat: no-repeat;
+    background-size: 1000px;
+    background-position: 800px 300px;
+
+    margin: 40px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    padding: 60px;
+}
+
+.cadastro-tela>img{
+    width: 250px;
+}
+
+.nomes{
+    color: var(--branco);
+    font-size: 25px;
+    padding-bottom: 2px;
 }
