@@ -8,13 +8,13 @@
     --preto: black;
     --branco: white;
     --pre-opac: rgba(0, 0, 0, 0.642);
+    --ciano: rgb(123, 224, 255);
 }
 
 body {
-    background:linear-gradient(180deg, rgba(116, 82, 255, 0.2) 0%,
-            rgba(85, 37, 217, 0.552) 55.94%,
-            rgba(31, 4, 77, 0.852) 100%), #C9D8EA;
-            
+    background-image: linear-gradient(to bottom, rgb(15, 7, 45), rgb(45, 13, 103) ,rgb(70, 10, 135));
+    background:linear-gradient(to bottom, rgba(109, 81, 220, 0.442),);
+    background-repeat: no-repeat;
 }
 
 .banner {
@@ -23,6 +23,9 @@ body {
     justify-content: space-between;
     padding-left: 40px;
     padding-right: 40px;
+
+
+    border-bottom: 2px solid var(--ciano);
 }
 
 .banner>img {
@@ -187,4 +190,75 @@ input{
     color: var(--branco);
     font-size: 25px;
     padding-bottom: 2px;
+}
+
+
+/*fazendo a página de filmes/séries/Livros*/
+
+.divisao{
+    margin: 20px;
+}
+.lista-de-conteudo{
+    display: flex;
+    overflow: scroll;
+    background-color: var(--pre-opac);
+}
+
+.lista-de-conteudo::-webkit-scrollbar{
+    background-color: transparent;
+    width: 0px;
+}
+.anim{
+    width: 130px;
+    margin: 5px;
+    display: flex;
+    justify-content: space-around;
+}
+
+.titulo-fileira{
+    background-color: var(--preto);
+    color: var(--branco) ;
+    text-align: center;
+    margin-right: 1340px;
+    border: 1px transparent;
+    border-radius: 10px 10px 0px 0px;
+}
+
+.linha-separacao{
+    border-color: var(--ciano);
+}
+
+.bot-telas{
+    border: 2px solid;
+    border-color: var(--ciano);
+    border-radius: 10px;
+    padding: 7px;
+    color: var(--branco);
+    text-decoration: none;
+}
+
+/*footer*/
+
+.pe{
+    background-color: var(--preto);
+    font-size: 20px;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    padding: 40px;
+}
+
+.pe>h1{
+    color: var(--branco);
+}
+
+.botao-loja{
+    border: 5px dotted;
+    border-color: var(--ciano);
+    border-radius: 30px;
+    box-shadow: 1px 2px var(--ciano);
+    padding: 20px;
+    color: var(--branco);
+    text-decoration: none;
+    font-size: 20px;
 }
