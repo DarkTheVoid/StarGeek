@@ -9,6 +9,7 @@
     --branco: white;
     --pre-opac: rgba(0, 0, 0, 0.642);
     --ciano: rgb(123, 224, 255);
+    --ciano-2: rgb(38, 86, 96);
 }
 
 body {
@@ -56,7 +57,29 @@ body {
 
     background: linear-gradient(276.18deg, #658EDF -9.44%, #1A2D82 113.07%);
     border-radius: 10px;
+    transition: 200ms;
 }
+
+
+.botao-azul:hover {
+    box-sizing: border-box;
+
+    padding: 8px;
+    left: 0%;
+    right: 0%;
+    top: 0%;
+    bottom: 0%;
+    color: var(--branco);
+    text-decoration: none;
+
+    background: linear-gradient(276.18deg, #9279ee -9.44%, #5325a8 113.07%);
+    border-radius: 10px;
+    border: 1px solid;
+    border-color: var(--ciano);
+    transition: 200ms;
+}
+
+
 
 /*fazendo o corpo*/
 
@@ -68,6 +91,9 @@ body {
     width: auto;
     height: 500px;
     margin: 20px;    display: flex;
+    border: 2px solid;
+    border-color: var(--ciano);
+    font-size: 25px;
 
 }
 
@@ -182,6 +208,11 @@ input{
     padding: 60px;
 }
 
+.cadastro-tela>a{
+    margin: 10px;
+}
+
+
 .cadastro-tela>img{
     width: 250px;
 }
@@ -210,9 +241,23 @@ input{
 }
 .anim{
     width: 130px;
-    margin: 5px;
+    height: 200px;
+    margin: 9px;
     display: flex;
     justify-content: space-around;
+    box-shadow: 0px 0px 3px var(--ciano);
+    transition: 200ms;
+}
+
+
+.anim:hover{
+    width: 130px;
+    height: 200;
+    margin: 7px;
+    display: flex;
+    justify-content: space-around;
+    box-shadow: 0px 0px 10px var(--ciano);
+    transition: 200ms;
 }
 
 .titulo-fileira{
@@ -235,30 +280,21 @@ input{
     padding: 7px;
     color: var(--branco);
     text-decoration: none;
+    transition: 200ms;
 }
+
+.bot-telas:hover{
+    border: 2px solid;
+    border-color: var(--ciano);
+    border-radius: 10px;
+    padding: 7px;
+    color: var(--branco);
+    text-decoration: none;
+    background-color: var(--ciano-2);
+    box-shadow: 0px 0px 9px var(--ciano);
+    transition: 200ms;
+}
+
 
 /*footer*/
 
-.pe{
-    background-color: var(--preto);
-    font-size: 20px;
-    text-align: center;
-    display: flex;
-    flex-direction: column;
-    padding: 40px;
-}
-
-.pe>h1{
-    color: var(--branco);
-}
-
-.botao-loja{
-    border: 5px dotted;
-    border-color: var(--ciano);
-    border-radius: 30px;
-    box-shadow: 1px 2px var(--ciano);
-    padding: 20px;
-    color: var(--branco);
-    text-decoration: none;
-    font-size: 20px;
-}
