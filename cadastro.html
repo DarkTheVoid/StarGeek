@@ -7,6 +7,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Cadastro SG</title>
     <link rel="stylesheet" href="CSS/style.css">
+    <script src="StarGeek.js"></script>
 </head>
 
 <body>
@@ -15,22 +16,24 @@
         <ul class="inputs">
             <li>
                 <p class="nomes">Nome de usuário</p>
-                <input type="text" placeholder="Digite aqui seu nome de úsuario" class="escrita">
+                <input type="text" placeholder="Digite aqui seu nome de úsuario" class="escrita" id="Nome">
             </li>
             <li>
-                <p class="nomes"> Nome completo</p>
-                <input type="text" placeholder="Digite aqui seu nome completo" class="escrita">
-            </li>
-            <li> 
                 <p class="nomes">E-mail:</p>
-                <input type="email" placeholder="Digite aqui seu E-mail" name="" id="" class="escrita"></li>
-            <li> 
+                <input type="email" placeholder="Digite aqui seu E-mail" name="" id="email" class="escrita" >
+            </li>
+            <li>
                 <p class="nomes">Senha</p>
-                <input type="password" placeholder="Digite aqui sua senha" class="escrita"></li>
+                <input type="password" placeholder="Digite aqui sua senha" class="escrita" id="Senha">
+            </li>
+            <li>
+                <p class="nomes">Confirmar Senha</p>
+                <input type="password" placeholder="Confirme" class="escrita" id="senhaConfirm">
+            </li>
         </ul>
 
-        <a href="pag-principal.html" class="botao-azul" target="_self" >Cadastrar</a>
-        <a href="index.html" class="botao-azul" target="_self">Voltar</a>
+        <a href="#" class="botao-azul" target="_self" onclick="BotaoCadastrar()">Cadastrar</a>
+        <a href="#" class="botao-azul" target="_self">Voltar</a>
     </div>
 </body>
 
